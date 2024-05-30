@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body{
+    background-image: url(../images/fondo1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.contenedor__registro {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.contenedor__registro_dos {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.contenedor__mensaje{
+    width: 100%;
+    margin-top: 145px;
+    background-color: #004C97;
+}
+
+.mensaje{
+    font-size: 24px;
+    padding: 135px 100px;
+    color: white;
+}
+
+.mensaje p{
+    margin-bottom: 40px;
+}
+
+.mensaje a{
+    padding: 10px 40px;
+    border: 2px solid #F1B434;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    transition: all 600ms;
+    border-radius: 15px;
+}
+
+.mensaje a:hover{
+    background: #ffffff;
+    color: #004C97;
+}

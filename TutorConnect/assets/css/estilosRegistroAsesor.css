@@ -1,0 +1,85 @@
+/* Registro de asesor */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url(../images/fondo1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.contenedor {
+    width: 500px;
+    background-color: white;
+    border: 2px solid #004C97;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column; /* Alinear verticalmente todo el contenido */
+    align-items: center; /* Centrar horizontalmente todo el contenido */
+}
+
+.registro {
+    font-size: 20px;
+    color: #F1B434;
+    text-align: center; /* Centrar texto */
+}
+
+.registro input,
+.registro select {
+    margin-top: 10px; /* Espaciado superior */
+    padding: 5px 20px; /* Relleno */
+    cursor: pointer;
+    border: 2px solid #004C97;
+    border-radius: 10px;
+    outline-color: #F1B434;
+    width: 100%; /* Ocupar todo el ancho disponible */
+    margin-bottom: 30px;
+}
+
+#default {
+    text-align: center;
+}
+
+.formulario__register {
+    margin-top: 10px;
+    padding: 5px 20px;
+    cursor: pointer;
+    border-color: #004C97;
+    border-radius: 10px;
+}
+
+.forma_ma {
+    height: 25px;
+}
+
+.forma_info {
+    width: 100%;
+    height: 200px;
+    resize: none; /* Evitar que el textarea se pueda redimensionar */
+}
+
+.registro button {
+    padding: 5px 30px;
+    border: 2px solid #004C97;
+    cursor: pointer;
+    font-size: 14px;
+    outline: none;
+    transition: all 600ms;
+    border-radius: 15px;
+}
+
+.registro button:hover {
+    border: 2px solid #F1B434;
+    color: #F1B434;
+}

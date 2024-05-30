@@ -1,0 +1,41 @@
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--profile-bg);
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 28rem;
+    margin: 0 auto;
+}
+
+.edit-form input[type="text"] {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--border-color);
+    background-color: var(--white);
+    transition: border-color 0.3s;
+}
+
+.edit-form input[type="text"]:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.edit-form button[type="submit"] {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-form button[type="submit"]:hover {
+    background-color: #F1B434;
+}

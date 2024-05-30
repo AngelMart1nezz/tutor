@@ -1,0 +1,211 @@
+/* Aqui se edita todo el contenido */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+/* Configuracion de la imagen de fondo */
+.registroInicioSesion {
+    background-image: url(../images/fondo1.png);
+    background-size: cover; /* La imagen se adapta a la ventana */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Configuracion de la posision de la caja completa */
+.registroInicioSesion {
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 125px;
+}
+
+/* Forma de la caja completa */
+.contenedor__todo {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+/* Diseño de la caja con el login y el register (caja azul trasera) */
+.caja__trasera {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #004C97;
+    backdrop-filter: blur (10px);
+}
+
+.caja__trasera div {
+    margin: 100px 40px;
+    color: white;
+    transition: all 600ms; /* Tiempo en el que aparecen y desaparecen las letras de la caja trasera */
+}
+
+.caja__trasera div p,
+.caja__trasera div button {
+    margin-top: 30px;
+}
+
+/* Forma de la letra de la caja trasera */
+.caja__trasera div h3 {
+    font-weight: 400;
+    font-size: 24px; /* Tamaño de la fuente */
+}
+
+/* Diseño y funcion de los botones */
+.caja__trasera button {
+    padding: 10px 40px;
+    border: 2px solid #F1B434; /* Margen de los botones */
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    transition: all 600ms;
+    border-radius: 15px; /* convertir las esquicas a curvadas */
+}
+
+/* Los botones cambian de color con el cursor */
+.caja__trasera button:hover {
+    background: #ffffff;
+    color: #004C97;
+}
+
+.caja__trasera_login,
+.caja__trasera_register {
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.3s ease, left 0.3s ease;
+}
+
+/* Formularios */
+
+#error-message {
+    color: black;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Configuracion de la caga delantera login y el register */
+.contenedor__login__register {
+    display: flex;
+    align-items: center;
+    width: 100%; /* porcentaje en tamaño de la caja delantera */
+    max-width: 380px; /* limite del ancho de la caja delantera */
+    position: relative;
+    top: -185px; /* Posision a lo largo de la caja delantera */
+    left: 10px;
+    opacity: 1;
+    transition: left 1.5s;
+}
+
+.contenedor__login__register form {
+    border: 2px solid #F1B434; /* crear borde que rodea la caja delantera */
+    width: 100%;
+    padding: 80px 20px;
+    background: #FFFFFF;
+    position: absolute; /* Encimar el login con el register */
+    border-radius: 20px; /* Convertir las esquinas a curveadas */
+}
+
+.contenedor__login__register form h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #004C97; /* "Registrarse" color*/
+    font-weight: bold;
+}
+
+.contenedor__login__register form input {
+    width: 100%; /* Porcentaje de lo largo de los formularios en la caja blanca */
+    margin-top: 20px; /* Espacio acia arriba de los formularios */
+    padding: 10px;
+    border: none; /* Quita el borde de los formularios */
+    background: #b2cdf0; /* Color de los formularios */
+    font-size: 16px;
+    outline: none; /* Quitar el contorno al los formularios cuando estan seleccionados */
+}
+
+
+/* Modificar opcion tutor/alumno */
+.formulario__register select {
+    margin-top: 10px;
+    padding: 5px 20px;
+    cursor: pointer;
+    border-color: #004C97;
+    border-radius: 10px;
+}
+
+/* Configuracion de los botones */
+.contenedor__login__register form button {
+    padding: 5px 30px;
+    margin-top: 40px;
+    border: 2px solid #004C97; /* Color del controno */
+    cursor: pointer;
+    background: #004C97;
+    font-size: 14px;
+    outline: none;
+    color: #ffffff; /* Color de la letra */
+    transition: all 600ms;
+    border-radius: 15px;
+}
+
+/* EL boton cambia de color con el cursor */
+.contenedor__login__register button:hover {
+    border: 2px solid #F1B434; /* Color del controno con el cursosr */
+    background: #ffffff;
+    color: #004C97; /* Color de la letra con el cursor */
+}
+
+/* Diseño del logo */
+.contenedor__login__register form img {
+    position: absolute;
+    margin-left: 19%;
+    margin-top: 10px;
+}
+
+/* Cambiar cuadro de register a Login */
+.formulario__login {
+    opacity: 1;
+    display: block;
+}
+
+.formulario__register {
+    display: none;
+}
+
+/* Hacer responsiva la pagina */
+@media screen and (max-width: 840px) {
+    body {
+        margin-top: 50px;
+    }
+
+    .caja__trasera {
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .caja__trasera div {
+        margin: 0px;
+        position: absolute;
+    }
+
+    .contenedor__login__register {
+        top: -10px;
+        left: 0px;
+        margin: auto;
+    }
+
+    .contenedor__login__register form {
+        position: relative;
+    }
+}
